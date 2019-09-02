@@ -1,0 +1,40 @@
+{
+  "name": "gulp-diffable-html",
+  "version": "1.0.0",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "dev": "gulp dev"
+  },
+  "keywords": [
+    "gulp",
+    "plugin",
+    "html",
+    "format",
+    "diffable-html"
+  ],
+  "description": "A simple gulp plugin for html formatting via diffable-html",
+  "author": {
+    "name": "ntnyq",
+    "email": "ntnyq13@gmail.com",
+    "url": "https://ntnyq.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "diffable-html": "^4.0.0",
+    "through2": "^3.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ntnyq/gulp-diffable-html.git"
+  },
+  "homepage": "https://github.com/ntnyq/gulp-diffable-html",
+  "bugs": {
+    "url": "https://github.com/ntnyq/gulp-diffable-html/issues"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
