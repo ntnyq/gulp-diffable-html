@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/ntnyq/gulp-diffable-html/compare/v1.1.0...v1.1.1) (2019-09-09)
+
+
+### Bug Fixes
+
+* optional verbose option ([c3b80f5](https://github.com/ntnyq/gulp-diffable-html/commit/c3b80f5))
+
 ## [1.1.0](https://github.com/ntnyq/gulp-diffable-html/compare/v1.0.0...v1.1.0) (2019-09-09)
 
 
