@@ -5,7 +5,9 @@ function views () {
   return gulp
     .src('dev/**/*.html')
     .pipe(
-      diffableHtml()
+      diffableHtml({
+        verbose: true
+      })
     )
     .pipe(gulp.dest('dist'))
 }
