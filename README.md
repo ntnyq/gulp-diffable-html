@@ -88,7 +88,14 @@ Output:
 
 ## Options
 
-__gulp-diffable-html__ is based on [diffable-html](https://github.com/rayrutjes/diffable-html) and it's a __zero-config__ HTML formatter.
+__gulp-diffable-html__ is based on [diffable-html](https://github.com/rayrutjes/diffable-html) which is a __zero-config__ HTML formatter.
+
+### verbose
+
+- __type__ `boolean`
+- __default__ `false`
+
+Display name of file from stream that is being formatting
 
 ## License
 
