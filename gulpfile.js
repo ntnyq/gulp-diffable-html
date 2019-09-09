@@ -6,7 +6,7 @@ function views () {
     .src('dev/**/*.html')
     .pipe(
       diffableHtml({
-        verbose: true
+        verbose: true,
       })
     )
     .pipe(gulp.dest('dist'))

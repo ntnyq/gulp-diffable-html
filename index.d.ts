@@ -3,9 +3,9 @@ import { Transform } from 'stream'
 /**
  * Returns a stream that compiles Vinyl files as HTML
  */
-declare function GulpFormatHtml (options: GulpFormatHtml.Options): Transform;
+declare function GulpDiffableHtml (options: GulpDiffableHtml.Options): Transform;
 
-declare namespace GulpFormatHtml {
+declare namespace GulpDiffableHtml {
   interface Options {
     /**
      * Display name of file from stream that is being formatting
@@ -14,4 +14,4 @@ declare namespace GulpFormatHtml {
   }
 }
 
-export = GulpFormatHtml
+export = GulpDiffableHtml
