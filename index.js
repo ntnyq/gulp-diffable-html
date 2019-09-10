@@ -7,8 +7,8 @@ const log = require('fancy-log')
 
 const PlUGIN_NAME = 'gulp-diffable-html'
 
-module.exports = function (options) {
-  return through.obj(function (file, enc, next) {
+module.exports = function(options = {}) {
+  return through.obj(function(file, enc, next) {
     if (file.isNull()) return next(null, file)
 
     const diffable = (buf, _, cb) => {
