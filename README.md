@@ -2,6 +2,7 @@
 
 :beer: A simple gulp plugin for html formatting via diffable-html.
 
+[![TRAVIS STATUS](https://img.shields.io/travis/ntnyq/gulp-diffable-html.svg?label=travis)](https://travis-ci.org/ntnyq/gulp-diffable-html)
 [![NPM VERSION](https://img.shields.io/npm/v/gulp-diffable-html.svg)](https://www.npmjs.com/package/gulp-diffable-html)
 [![NPM DOWNLOADS](https://img.shields.io/npm/dm/gulp-diffable-html.svg)](https://www.npmjs.com/package/gulp-diffable-html)
 [![LICENSE](https://img.shields.io/github/license/ntnyq/gulp-diffable-html.svg)](https://github.com/ntnyq/gulp-diffable-html/blob/master/LICENSE)
@@ -32,18 +33,27 @@ function views () {
 exports.dev = gulp.series(views)
 ```
 
+## Features
+
+- zero-config
+- indenting every level with 2 spaces
+- align attributes
+- put every opening and closing tag on its own line
+- trimming text nodes
+
 ## Example
 
 Input:
 
 ``` html
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>gulp-diffable-html</title></head><body><header><h1><span>I am h1 in header</span></h1></header><main><p><span>span</span><b>b</b><strong>strong</strong><em>em</em></p></main><footer><p><a href="https://github.com/ntnyq/gulp-diffable-html">gulp-diffable-html</a></p></footer></body></html>
+<!DOCTYPE html><!--[if IE 9]>.... some HTML here ....<![endif]--><html lang="en"><head><meta charset="UTF-8"><title>gulp-diffable-html</title></head><body><header><h1><span>I am h1 in header</span></h1></header><main><p><!----><span></span><b>b</b><strong>strong</strong><em>&copy;</em><!-- This comment should be removed --></p></main><footer><p><a href="https://github.com/ntnyq/gulp-diffable-html" target="_blank" rel="noopener" >gulp-diffable-html</a></p></footer></body></html>
 ```
 
 Output:
 
 ``` html
 <!DOCTYPE html>
+<!--[if IE 9]>.... some HTML here ....<![endif]-->
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -62,7 +72,6 @@ Output:
     <main>
       <p>
         <span>
-          span
         </span>
         <b>
           b
@@ -71,13 +80,16 @@ Output:
           strong
         </strong>
         <em>
-          em
+          &copy;
         </em>
       </p>
     </main>
     <footer>
       <p>
-        <a href="https://github.com/ntnyq/gulp-diffable-html">
+        <a href="https://github.com/ntnyq/gulp-diffable-html"
+           target="_blank"
+           rel="noopener"
+        >
           gulp-diffable-html
         </a>
       </p>
