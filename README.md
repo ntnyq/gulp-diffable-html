@@ -1,11 +1,8 @@
 # gulp-diffable-html
 
-:beer: A simple gulp plugin for html formatting via diffable-html.
+> __Migrated to [gulp-plugins](https://github.com/ntnyq/gulp-plugins)__
 
-[![TRAVIS STATUS](https://img.shields.io/travis/ntnyq/gulp-diffable-html.svg?label=travis)](https://travis-ci.org/ntnyq/gulp-diffable-html)
-[![NPM VERSION](https://img.shields.io/npm/v/gulp-diffable-html.svg)](https://www.npmjs.com/package/gulp-diffable-html)
-[![NPM DOWNLOADS](https://img.shields.io/npm/dm/gulp-diffable-html.svg)](https://www.npmjs.com/package/gulp-diffable-html)
-[![LICENSE](https://img.shields.io/github/license/ntnyq/gulp-diffable-html.svg)](https://github.com/ntnyq/gulp-diffable-html/blob/master/LICENSE)
+:beer: A simple gulp plugin for html formatting via diffable-html.
 
 ## Install
 
